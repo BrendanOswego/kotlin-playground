@@ -3,7 +3,7 @@
 # Kotlin Playground
 
 ## Description
-An example application for highlighting basic features of Kotlin.
+An application to allow developers to learn basic features of Kotlin.
 
 ## Running Tests
 Use the following command to run tests:
