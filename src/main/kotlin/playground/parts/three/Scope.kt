@@ -16,7 +16,6 @@ class Scope {
      * @param user The user to be referenced in [with] function
      */
     fun `with function`(user: User) {
-        TODO("insert implementation here")
     }
 
     /**
@@ -34,8 +33,8 @@ class Scope {
      *
      * @return The created user
      */
-    fun `apply function`(): User {
-        TODO("insert implementation here")
+    fun `apply function`(): User? {
+        return null
     }
 
     /**
@@ -45,7 +44,7 @@ class Scope {
      *
      * @return The updated user
      */
-    fun `also function`(user: User): User {
-        TODO("insert implementation here")
+    fun `also function`(user: User): User? {
+        return null
     }
 }

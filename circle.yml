@@ -1,0 +1,4 @@
+test:
+  post:
+    - if [ -e ./gradlew ]; then ./gradlew coverageReport;else gradle coverageReport;fi
+  - bash <(curl -s https://codecov.io/bash)

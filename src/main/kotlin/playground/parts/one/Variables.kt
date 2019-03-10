@@ -10,8 +10,8 @@ class Variables {
      *
      * @return [String] value of created String
      */
-    fun `create implicit var string`(): String {
-        TODO("insert implementation here")
+    fun `create implicit var string`(): String? {
+        return null
     }
 
     /**
@@ -19,8 +19,8 @@ class Variables {
      *
      * @return [String] value of created String
      */
-    fun `create explicit var string`(): String {
-        TODO("insert implementation here")
+    fun `create explicit var string`(): String? {
+        return null
     }
 
     /**
@@ -28,8 +28,8 @@ class Variables {
      *
      * @return [String] value of created String
      */
-    fun `create implicit val string`(): String {
-        TODO("insert implementation here")
+    fun `create implicit val string`(): String? {
+        return null
     }
 
     /**
@@ -37,8 +37,8 @@ class Variables {
      *
      * @return [String] value of created String
      */
-    fun `create explicit val string`(): String {
-        TODO("insert implementation here")
+    fun `create explicit val string`(): String? {
+        return null
     }
 
 }

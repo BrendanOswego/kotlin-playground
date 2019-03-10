@@ -1,5 +1,6 @@
 package playground
 
+import kotlinx.coroutines.runBlocking
 import playground.parts.one.Variables
 import kotlin.test.Test
 import kotlin.test.assertNotNull

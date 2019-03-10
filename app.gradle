@@ -1,8 +1,11 @@
 apply plugin: 'application'
 apply plugin: 'kotlin'
 apply plugin: 'org.jetbrains.dokka'
+apply plugin: 'jacoco'
 
-mainClassName = "playground.AppKt"
+application {
+    mainClassName = "playground.AppKt"
+}
 
 compileKotlin {
     kotlinOptions {
@@ -18,6 +21,44 @@ compileTestKotlin {
 dokka {
     outputFormat = 'javadoc'
     outputDirectory = "$projectDir/documentation"
+}
+
+jacoco {
+    toolVersion = "0.8.2"
+}
+
+/**
+ * clear Jacoco folder before create new report.
+ */
+task clearJacocoReport(type: Delete) {
+    delete "$buildDir/reports/jacoco"
+}
+
+/**
+ * Creates full coverage running Instrumentation and Unit Tests to an index.html file.
+ *
+ * Location of file is <project-root>/build/reports/jacoco/fullCoverageReport/index.html
+ */
+task coverageReport(type: JacocoReport, dependsOn: ['check', 'clearJacocoReport']) {
+    group "Reporting"
+    description "Creates full Unit Test coverage report"
+
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+
+    def fileFilter = []
+    def mainSrc = "$projectDir/src/main/kotlin"
+
+    classDirectories = fileTree(dir: "$buildDir/classes/kotlin/main", excludes: fileFilter)
+
+    sourceDirectories = files([mainSrc])
+
+    // Data taken is from both jacoco Unit tests, and Android Instrumentation tests
+    executionData = fileTree(dir: "$buildDir", includes: [
+            "jacoco/test.exec",
+    ])
 }
 
 dependencies {
