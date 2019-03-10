@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/BrendanOswego/kotlin-playground.svg?branch=master)](https://travis-ci.com/BrendanOswego/kotlin-playground)
+[![codecov](https://codecov.io/gh/BrendanOswego/kotlin-playground/branch/master/graph/badge.svg)](https://codecov.io/gh/BrendanOswego/kotlin-playground) [![Build Status](https://travis-ci.com/BrendanOswego/kotlin-playground.svg?branch=master)](https://travis-ci.com/BrendanOswego/kotlin-playground)
 
 # Kotlin Playground
 
