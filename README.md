@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/BrendanOswego/kotlin-playground.svg?branch=master)](https://travis-ci.com/BrendanOswego/kotlin-playground)
+
 # Kotlin Playground
 
 ## Description
