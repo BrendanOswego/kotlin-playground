@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/BrendanOswego/kotlin-playground/branch/master/graph/badge.svg)](https://codecov.io/gh/BrendanOswego/kotlin-playground) [![Build Status](https://travis-ci.com/BrendanOswego/kotlin-playground.svg?branch=master)](https://travis-ci.com/BrendanOswego/kotlin-playground)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![codecov](https://codecov.io/gh/BrendanOswego/kotlin-playground/branch/master/graph/badge.svg)](https://codecov.io/gh/BrendanOswego/kotlin-playground) [![Build Status](https://travis-ci.com/BrendanOswego/kotlin-playground.svg?branch=master)](https://travis-ci.com/BrendanOswego/kotlin-playground)
 
 # Kotlin Playground
 
